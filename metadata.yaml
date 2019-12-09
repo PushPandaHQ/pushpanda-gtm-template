@@ -1,6 +1,9 @@
 homepage: "https://www.pushpanda.io"
 documentation: "https://hilfe.pushpanda.io"
 versions:
-  # Latest Version
+  # Latest version
+  - sha: 09d071c15ce39b5853f61a89dce131a5471148a5
+    changeNotes: Typo fixes
+  # Older versions
   - sha: 6bf51c494be2ebea9fe17fdfa73a666e45935afc
     changeNotes: Initial Version
