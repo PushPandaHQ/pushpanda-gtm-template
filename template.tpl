@@ -36,7 +36,26 @@ ___TEMPLATE_PARAMETERS___
     "displayName": "Project-ID",
     "simpleValueType": true,
     "help": "You can find the Project-ID in your Project Settings under Tab General.",
-    "alwaysInSummary": true
+    "alwaysInSummary": true,
+    "valueValidators": [
+      {
+        "type": "NON_EMPTY"
+      }
+    ]
+  },
+  {
+    "type": "TEXT",
+    "name": "pp_path",
+    "displayName": "ServiceWorker Directory",
+    "simpleValueType": true,
+    "help": "The absolute path of the ServiceWorker directory, normally the root directory, eg: /",
+    "alwaysInSummary": true,
+    "value": "/",
+    "valueValidators": [
+      {
+        "type": "NON_EMPTY"
+      }
+    ]
   },
   {
     "type": "CHECKBOX",
@@ -62,8 +81,9 @@ const log = data.pp_debug ? logToConsole : (() => {});
 const pp = copyFromWindow('_pushpanda') || [];
 
 // add variables
-const projectId = data.pp_id;
-pp.push(['_project', projectId]);
+pp.push(['_project', data.pp_id]);
+pp.push(['_path', data.pp_path]);
+
 
 if (data.pp_debug) {
 	pp.push(['_debug', true]);
