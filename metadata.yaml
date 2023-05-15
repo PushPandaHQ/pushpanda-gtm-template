@@ -2,8 +2,11 @@ homepage: "https://www.pushpanda.io"
 documentation: "https://hilfe.pushpanda.io"
 versions:
   # Latest version
+  - sha: 388b29b243ff00a036cd62dfc3c9386459639392
+    changeNotes: Add ServiceWorker directory
+      Small Improvements
+  # Older versions
   - sha: 09d071c15ce39b5853f61a89dce131a5471148a5
     changeNotes: Typo fixes
-  # Older versions
   - sha: 6bf51c494be2ebea9fe17fdfa73a666e45935afc
     changeNotes: Initial Version
