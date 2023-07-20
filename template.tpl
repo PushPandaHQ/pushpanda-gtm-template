@@ -79,10 +79,11 @@ const log = data.pp_debug ? logToConsole : (() => {});
 
 // get pp array
 const pp = copyFromWindow('_pushpanda') || [];
+const pp_path = data.pp_path === undefined ? "/" :  data.pp_path;
 
 // add variables
 pp.push(['_project', data.pp_id]);
-pp.push(['_path', data.pp_path]);
+pp.push(['_path', pp_path]);
 
 
 if (data.pp_debug) {
