@@ -50,7 +50,7 @@ ___TEMPLATE_PARAMETERS___
     "simpleValueType": true,
     "help": "The absolute path of the ServiceWorker directory, normally the root directory, eg: /",
     "alwaysInSummary": true,
-    "value": "/",
+    "defaultValue": "/",
     "valueValidators": [
       {
         "type": "NON_EMPTY"
