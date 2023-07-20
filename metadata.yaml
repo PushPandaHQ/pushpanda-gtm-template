@@ -2,12 +2,14 @@ homepage: "https://www.pushpanda.io"
 documentation: "https://support.pushpanda.io"
 versions:
   # Latest version
+  - sha: dfae2c01719b8ef740eaa8027b04a742efb40c7c
+    changeNotes: Improve FS Handling
+  # Older versions
   - sha: 30c589fe2cf272f54e0b20124405f69a270328f7
     changeNotes: Fix SW Directory
-  # Older versions
-    - sha: 388b29b243ff00a036cd62dfc3c9386459639392
-      changeNotes: Add ServiceWorker directory
-        Small Improvements
+  - sha: 388b29b243ff00a036cd62dfc3c9386459639392
+    changeNotes: Add ServiceWorker directory
+      Small Improvements
   - sha: 09d071c15ce39b5853f61a89dce131a5471148a5
     changeNotes: Typo fixes
   - sha: 6bf51c494be2ebea9fe17fdfa73a666e45935afc
